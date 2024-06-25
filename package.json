@@ -4,8 +4,7 @@
   "type": "module",
   "main": "src/main.js",
   "scripts": {
-    "build": "tsc",
-    "start": "node build/main.js --port=$PORT"
+    "build": "tsc"
   },
   "keywords": [],
   "devDependencies": {
