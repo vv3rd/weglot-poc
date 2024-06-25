@@ -13,7 +13,9 @@
     "@types/node": "^20.14.8"
   },
   "dependencies": {
-    "typescript": "^5.5.2",
-    "express": "^4.19.2"
+    "@types/morgan": "^1.9.9",
+    "express": "^4.19.2",
+    "morgan": "^1.10.0",
+    "typescript": "^5.5.2"
   }
 }
