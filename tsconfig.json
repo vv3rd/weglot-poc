@@ -14,6 +14,7 @@
     "noImplicitOverride": true,
 
     "module": "NodeNext",
+    "outDir": "build",
 
     "lib": ["es2022"]
   }

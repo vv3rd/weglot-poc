@@ -8,7 +8,6 @@
     let
       pkgs = import nixpkgs { inherit system; };
       node = pkgs.nodejs;
-      pnpm = node.pkgs.pnpm;
 
       # app = pkgs.mkDerivation {
       #   name = "rsn-poc";
@@ -28,7 +27,8 @@
       devShell = pkgs.mkShell {
         packages = [
           node
-          pnpm
+          node.pkgs.pnpm
+          node.pkgs.vercel
         ];
 
         shellHook = ''
