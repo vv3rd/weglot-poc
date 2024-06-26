@@ -5,13 +5,11 @@ import { parseArgs, type ParseArgsConfig } from 'node:util'
 
 const __dirname = import.meta.dirname
 
-const argsOptions = {
+const ARGS = parseArgs({ options: {
   port: {
     type: "string"
   }
-} satisfies ParseArgsConfig['options']
-
-const ARGS = parseArgs({ options: argsOptions, args: process.argv.slice(2) })
+}, args: process.argv.slice(2) })
 const PORT = ARGS.values.port ?? 3003
 
 const app = express()
